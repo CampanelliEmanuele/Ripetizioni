@@ -1,0 +1,34 @@
+APPUNTI C++
+
+    Principali tipi di dato:
+        - int -> Numeri interi (no numeri con la virgola).
+        - float -> Numeri razionali (numeri con la virgola).
+        - bool -> Il tipo booleano può assumere solo due valori: true (1) e false (0).
+        - char -> Un singolo carattere contenuto tra due apici singoli ''.
+        - void -> Usato solo per le funzioni. Indica che la funzione non ritorna nessun dato.
+
+    Dichiarazione di variabili:
+        <tipo-della-variabile> <nome-variabile>;
+        <tipo-della-variabile> <nome-variabile> = un valore del dominio del tipo di dato;
+        Esempi di dichiarazione:
+            1. int numeroIntero = 4;    // Tipo della variabile: int (Dominio: interi Z)
+                                        // Nome della variabile: numeroIntero
+                                        // 4 ∈ Z
+            2. char carattere = 'S'     // Tipo della variabile: char (Dominio: tutti i caratteri)
+                                        // Nome della variabile: carattere
+                                        // 'S' ∈ Insieme dei caratteri
+                                    
+    Dichiarazione di funzione:
+        <tipo-della-funzione> <nome-funzione> (<tipo-parametro> <nome-parametro>, ...) {
+            <corpo-della-funzione>
+            return <tipo-della-funzione>;       // Il return c'è solo se la funzione non è di tipo void
+        }
+        Esempio di Dichiarazione:
+        char funzioneDiEsempio (char inizialeDelNome) {     // Tipo ritornato dalla funzione: char
+                                                            // Nome della funzione: funzioneDiEsempio
+                                                            // Questa funzione ha solo un parametro ed è di tipo char
+            return inizialeDelNome;                         // La funzione ritorna un char (in questo caso l'unico parametro)
+        }
+
+		// Nota: nella definizione di una funzione i parametri si chiamano 'parametri formali'
+		//       mentre quando si chiama una funzionione assegnando dei valori a tali parametri, si chiamano 'parametri attuali'.
